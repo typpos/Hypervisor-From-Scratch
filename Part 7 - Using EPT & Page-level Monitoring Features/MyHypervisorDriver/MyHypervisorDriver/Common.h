@@ -181,9 +181,9 @@ typedef enum _LOG_TYPE
 }LOG_TYPE;
 
 // Function
-VOID LogPrintInfo(PCSTR Format);
-VOID LogPrintWarning(PCSTR Format);
-VOID LogPrintError(PCSTR Format);
+VOID LogPrintInfo(PCSTR Format, ...);
+VOID LogPrintWarning(PCSTR Format, ...);
+VOID LogPrintError(PCSTR Format, ...);
 
 // Defines
 #define LogInfo(format, ...)  \

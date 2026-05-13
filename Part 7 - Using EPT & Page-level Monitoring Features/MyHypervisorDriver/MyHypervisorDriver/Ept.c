@@ -646,7 +646,7 @@ BOOLEAN EptPageHook(PVOID TargetFunc, BOOLEAN HasLaunched) {
 
 	if (HasLaunched)
 	{
-		if (AsmVmxVmcall(VMCALL_EXEC_HOOK_PAGE, TargetFunc, NULL, NULL, NULL) == STATUS_SUCCESS)
+		if (AsmVmxVmcall(VMCALL_EXEC_HOOK_PAGE, TargetFunc, NULL, NULL) == STATUS_SUCCESS)
 		{
 			LogInfo("Hook applied from VMX Root Mode");
 

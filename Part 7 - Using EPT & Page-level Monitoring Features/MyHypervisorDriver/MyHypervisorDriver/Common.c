@@ -122,12 +122,12 @@ UINT64 PhysicalAddressToVirtualAddress(UINT64 PhysicalAddress)
 }
 
 /* Print logs in different levels */
-VOID LogPrintInfo(PCSTR Format) {
+VOID LogPrintInfo(PCSTR Format, ...) {
 	DbgPrint(Format);
 }
-VOID LogPrintWarning(PCSTR Format) {
+VOID LogPrintWarning(PCSTR Format, ...) {
 	DbgPrint(Format);
 }
-VOID LogPrintError(PCSTR Format) {
+VOID LogPrintError(PCSTR Format, ...) {
 	DbgPrint(Format);
 }
